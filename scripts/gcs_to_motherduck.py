@@ -25,7 +25,7 @@ def list_parquet_files(bucket, prefix):
         f"gs://{f.path}" for f in files
         if f.is_file and f.path.endswith(".parquet")
     ]
-    
+
 # --- Connect to MotherDuck ---
 def connect():
     try:
